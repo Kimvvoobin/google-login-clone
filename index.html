@@ -7,6 +7,7 @@
     <title>로그인 - Goolge 계정</title>
 </head>
 <body>
+
     <div id="container">
         <div id="left-section">
             <img src="./logo.png" alt="">
@@ -24,10 +25,26 @@
             </div>
             <br>
             <div id="btn-wrap">
-                <button id="make-btn">계정 만들기</button>
-                <button id="next-btn">다음</button>
+                <button  onclick="openModal()" id="make-btn">계정 만들기</button>
+                <button onclick="changeColor()" id="next-btn">다음</button>
             </div>
         </div>
     </div>
+
+    <div id="modal">
+        <div>
+            <input type="text" placeholder="아이디를 입력해주세요">
+            <input type="password" placeholder="비번을 입력해주세요">
+            <button>계정 만들기</button>
+        </div>
+
+        <div>
+            <button onclick="closeModal()">닫기</button>
+        </div>
+    </div>
+
+    <div id="background-blur"></div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
